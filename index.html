@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="main.css">
+  <script defer src="main.js"></script>
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: white;
+      margin-top: 5px;
+    }
+
+    .attribution a {
+      color:white;
+    }
+  </style>
+</head>
+
+<body class="flex flex-center flex-column">
+
+  <div class="calculator">
+
+    <div class="upper padding-x-3 flex justify-space-between align-center">
+
+      <h1 class="text-lowercase">Calc</h1>
+
+      <div class="flex flex-align-center">
+        <p class="theme__p text-uppercase margin-bottom-0 margin-5">Theme</p>
+
+        <div class="themes flex flex-center">
+
+          <div class="theme active flex flex-column">
+            <label for="theme1">1</label>
+            <input checked type="radio" name="theme" id="theme1" />
+          </div>
+
+          <div class="theme flex flex-column">
+            <label for="theme2">2</label>
+            <input type="radio" name="theme" id="theme2" />
+          </div>
+
+          <div class="theme flex flex-column">
+            <label for="theme3">3</label>
+            <input type="radio" name="theme" id="theme3" />
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="screen padding-3 margin-y-5">
+      <input disabled class="border-0 padding-3 input" type="text" name="" id="display" value="0" />
+    </div>
+    <div id="buttons" class="buttons grid padding-5">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="text-uppercase emphasized delete">Del</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>+</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>-</button>
+      <button>.</button>
+      <button>0</button>
+      <button>÷</button>
+      <button>×</button>
+      <button class="span-2 text-uppercase emphasized">Reset</button>
+      <button class="span-2 equals">=</button>
+    </div>
+    
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a target="_blank" href="https://wa.me/254715870654">Gerison</a>.
+
+  </div>
+
+</body>
+
+</html>
